@@ -1,0 +1,122 @@
+<!-- submission.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Submission</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="local.css">
+  <style>
+ 
+  </style>
+</head>
+<body>
+  <header>
+    <!-- navigation bar -->
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Каталог</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Головна </a>
+      <a class="nav-item nav-link" href="submission.html">Додати<span class="sr-only">(current)</span></a>
+     
+    </div>
+  </div>
+</nav>
+</div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Додати ресторан</h1>
+      <form id="submission-form">
+        <div class="mb-3">
+          <label for="name-input" class="form-label">Назва</label>
+          <input type="text" class="form-control" id="name-input" required>
+        </div>
+        <div class="mb-3">
+          <label for="location-input" class="form-label">Локація</label>
+          <input type="text" class="form-control" id="location-input" required>
+        </div>
+        <div class="mb-3">
+          <label for="dishes-input" class="form-label">Страви</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="М'ясо гриль" id="dish1-input">
+            <label class="form-check-label" for="dish1-input">М'ясо гриль</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Борщ" id="dish2-input">
+            <label class="form-check-label" for="dish2-input">Борщ</label>
+          </div>
+		  <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Фалафель" id="dish3-input">
+            <label class="form-check-label" for="dish3-input">Фалафель</label>
+          </div>
+		   <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Качка по-шанхайськи" id="dish4-input">
+            <label class="form-check-label" for="dish4-input">Качка по-шанхайськи</label>
+          </div>
+		   <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Бастурма" id="dish5-input">
+            <label class="form-check-label" for="dish5-input">Бастурма</label>
+          </div>
+		  <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Кролик у сметані" id="dish6-input">
+            <label class="form-check-label" for="dish6-input">Кролик у сметані</label>
+          </div>
+		  <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Біфштекс" id="dish7-input">
+            <label class="form-check-label" for="dish7-input">Біфштекс</label>
+          </div>
+		  
+		  <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Цибулева зупа" id="dish8-input">
+            <label class="form-check-label" for="dish8-input">Цибулева зупа</label>
+          </div>
+		   <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Салат Цезар" id="dish9-input">
+            <label class="form-check-label" for="dish9-input">Салат Цезар</label>
+          </div>
+		   <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Салат Асорті" id="dish10-input">
+            <label class="form-check-label" for="dish10-input">Салат Асорті</label>
+          </div>
+          <!-- Add more dishes here... -->
+        </div>
+        <div class="mb-3">
+          <label for="description-input" class="form-label">Опис ресторану</label>
+          <textarea class="form-control" id="description-input" rows="4"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="cuisine" class="form-label">Кухня</label>
+          <select class="form-select" id="cuisine-select">
+		  <option value="Українська">Українська</option>
+            <option value="Європейська">Європейська</option>
+            <option value="Американська">Американська</option>
+            <option value="Ірландська">Ірландська</option>
+			<option value="Японська">Японська</option>
+			<option value="Китайська">Китайська</option>
+			<option value="Індійська">Індійська</option>
+			<option value="Турецька">Турецька</option>
+			
+            <!-- Add more cuisine categories here... -->
+          </select>
+        </div>
+		   <div class="mb-3">
+          <label for="image-url-input" class="form-label">URL зображення</label>
+          <input type="text" class="form-control" id="image-url-input">
+        </div>
+        <button type="submit" class="btn btn-primary">Відправити</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="submission.js"></script>
+</body>
+</html>
